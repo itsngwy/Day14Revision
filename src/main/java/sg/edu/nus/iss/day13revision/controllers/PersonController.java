@@ -61,6 +61,8 @@ public class PersonController {
         PersonForm pForm = new PersonForm();
         model.addAttribute("personForm", pForm);
 
+        // This will go to addPerson.html then once from there it submits, 
+        // it will go to the RequestMapping /addPerson below
         return "addPerson";
     }
 
