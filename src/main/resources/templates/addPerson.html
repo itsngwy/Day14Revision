@@ -8,14 +8,20 @@
 </head>
 <body>
     <h1>Create Person</h1>
-    <!-- Form submit will become an object  -->
-    <form th:action="@{/addPerson}" th:object="${personForm}" method="POST">
-        <p>First Name: 
-            <input type="text" th:field="*{firstName}"/>
+    <!-- The object personForm that was passed over from showAddPersonPage method from PersonController using model, -->
+    <!-- it is first retrieved with th:object -->
+    <!-- th:action will submit the form to localhost8085/addPerson with the method POST -->
+    <!-- the object personForm (with fields) will be stored in a model then past over to the Controller-->
+    <form th:object="${personForm}" th:action="@{/addPerson}" method="POST">
+        <p>First Name:
+            <!-- personForm object is passed into this form using Model, -->
+            <!-- th:field="*{firstName2}" will create id="firstName2" and name="firstName2" and bind to the personForm object-->
+            <!-- The th:field name must be the same as BOTH the getters and setters, it will not work if the fields name is different from getters and setters-->
+            <input type="text" th:field="*{firstName2}"/>
         </p>
         <br>
         <p>Last Name: 
-            <input type="text" th:field="*{lastName}"/>
+            <input type="text" th:field="*{lastName2}"/>
         </p>
         <br><br>
         <input type="submit" value="Create"/>

@@ -1,4 +1,4 @@
-package sg.edu.nus.iss.day13revision.models;
+package sg.edu.nus.iss.day14revision.models;
 
 public class Person {
     
@@ -10,18 +10,17 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public String getFirstName() {
+    public String getFirstName1() {
         return firstName;
     }
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-    public String getLastName() {
+    public String getLastName1() {
         return lastName;
     }
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    
 }

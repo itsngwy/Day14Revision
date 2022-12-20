@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>sg.edu.nus.iss</groupId>
-	<artifactId>day13revision</artifactId>
+	<artifactId>day14revision</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>day13revision</name>
-	<description>Day 13 Revision</description>
+	<name>day14revision</name>
+	<description>Day 14 Revision</description>
 	<properties>
 		<java.version>18</java.version>
 	</properties>

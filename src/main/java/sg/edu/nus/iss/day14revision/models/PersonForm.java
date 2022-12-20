@@ -1,20 +1,20 @@
-package sg.edu.nus.iss.day13revision.models;
+package sg.edu.nus.iss.day14revision.models;
 
 public class PersonForm {
 
     private String firstName;
     private String lastName;
 
-    public String getFirstName() {
+    public String getFirstName2() {
         return firstName;
     }
-    public void setFirstName(String firstName) {
+    public void setFirstName2(String firstName) {
         this.firstName = firstName;
     }
-    public String getLastName() {
+    public String getLastName2() {
         return lastName;
     }
-    public void setLastName(String lastName) {
+    public void setLastName2(String lastName) {
         this.lastName = lastName;
     }
 

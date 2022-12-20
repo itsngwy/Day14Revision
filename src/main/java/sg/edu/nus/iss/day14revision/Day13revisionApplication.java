@@ -1,4 +1,4 @@
-package sg.edu.nus.iss.day13revision;
+package sg.edu.nus.iss.day14revision;
 
 import java.util.Collections;
 import org.springframework.boot.ApplicationArguments;
@@ -11,6 +11,7 @@ import org.springframework.web.filter.CommonsRequestLoggingFilter;
 @SpringBootApplication
 public class Day13revisionApplication {
 
+	// To see what the browser requests
 	@Bean
 	public CommonsRequestLoggingFilter log() {
 		CommonsRequestLoggingFilter logger = new CommonsRequestLoggingFilter();

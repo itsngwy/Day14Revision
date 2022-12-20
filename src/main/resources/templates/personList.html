@@ -9,6 +9,7 @@
 </head>
 <body>
     <h1>List of Persons </h1>
+    <!-- Add a new person-->
     <a href="addPerson">Add Person</a>
     <br><br>
     <div>
@@ -18,8 +19,10 @@
                 <td>Last Name</td>
             </tr>
             <tr th:each="person:${persons}">
-                <td th:text="${person.firstName}">...</td>
-                <td th:text="${person.lastName}">...</td>
+                <!-- person.firstName is equal to person.getFirstName1 from Person class-->
+                <!-- the get will be auto added in-->
+                <td th:text="${person.firstName1}">...</td>
+                <td th:text="${person.lastName1}">...</td>
             </tr>
         </table>
     </div>
